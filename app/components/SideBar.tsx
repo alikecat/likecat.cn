@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
-export function SideBar() {
+export const SideBar = () => {
   const nav = [
     { name: "XJTU", icon: faSchool },
     { name: "Xi'an, China", icon: faLocationDot },
@@ -21,22 +21,23 @@ export function SideBar() {
     },
   ];
   return (
-    <div className="w-72 shrink-0 max-md:hidden">
+    <div className="shrink-0 w-full mx-auto">
       <div className="sticky top-28 flex flex-col py-4 space-y-4 font-sans">
         <Image
           src="/Profile.jpg"
-          alt="Profile Photo"
+          alt="Professional Profile Photo"
           width={256}
           height={256}
           quality={100}
-          className="mx-auto rounded-full outline outline-1 outline-offset-8 outline-white/20"
+          className="mx-auto rounded-full border-4 border-cyan-500/30 shadow-2xl transform hover:scale-105 hover:brightness-110 hover:shadow-cyan-500/30 transition-all duration-500"
         />
-        <h2 className="font-dune font-bold text-2xl text-center">
+        <h1 className="font-dune font-bold text-2xl text-center bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2">
           Bojun Zhang
-        </h2>
-        <p className="font-mono">
-          Mechanical PhD candidate, tackling gears by day, moonlighting as a
-          code wizard and UI designer by night. 🚀💻✨
+        </h1>
+        <p className="font-mono text-center text-slate-300 leading-relaxed">
+          PhD Candidate in Mechanical Engineering
+          <br />
+          Xi'an Jiaotong University
         </p>
         <div className="table leading-loose border-t border-white/20 py-4 font-bold">
           {nav.map((link) =>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faOrcid } from "@fortawesome/free-brands-svg-icons";
 
-export function FootBar() {
+export const FootBar = () => {
   const nav = [
     { name: "likecat.cn", icon: faHouse, href: "/" },
     { name: "a@likecat.cn", icon: faEnvelope, href: "mailto:a@likecat.cn" },

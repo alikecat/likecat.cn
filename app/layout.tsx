@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GlobalEffects } from "@/app/components/Effects";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Likecat.cn",
-  description: "🚀 Crafting my digital haven! This website is like a blank canvas, and I'm still deciding which fun nuggets to sprinkle on it. Brace for impact – fun stuff incoming! 💻✨",
+  title: "Bojun Zhang - XJTU PhD Candidate",
+  description:
+    "PhD Candidate in Mechanical Engineering at Xi'an Jiaotong University. Specializing in AI applications, human factors engineering, and medical technology innovation.",
 };
 
 export default function RootLayout({
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <GlobalEffects />
+        {children}
+      </body>
     </html>
   );
 }
