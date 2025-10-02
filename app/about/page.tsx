@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => (
             PhD Candidate in Mechanical Engineering
             <br />
             <span className="text-cyan-300 group-hover:text-cyan-200 transition-colors duration-300">
-              Xi'an Jiaotong University
+              {`Xi'an Jiaotong University`}
             </span>
           </p>
           <p className="text-slate-400 text-base leading-relaxed mb-8 group-hover:text-slate-200 transition-colors duration-300">
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => (
                 className="text-cyan-400 group-hover:text-cyan-300 w-5"
               />
               <span className="text-slate-300 group-hover:text-white transition-colors duration-300">
-                Xi'an, China
+                {`Xi'an, China`}
               </span>
             </div>
             <div className="flex items-center space-x-3 justify-start group hover:scale-105 transition-transform duration-300">
@@ -182,8 +182,7 @@ const CoreResearchSection: React.FC = () => (
         Academic Foundation
       </h3>
       <p className="leading-relaxed text-center">
-        PhD candidate in <strong>Mechanical Engineering</strong> at{" "}
-        <strong>Xi'an Jiaotong University</strong>, leveraging engineering
+        PhD candidate in <strong>Mechanical Engineering</strong> at <strong>{`Xi'an Jiaotong University`}</strong>, leveraging engineering
         principles to advance human-centered AI and medical technology
         innovation.
       </p>
@@ -390,13 +389,13 @@ const ContactSection: React.FC = () => (
   <Card color="cyan" hoverEffect={true}>
     <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
       <FontAwesomeIcon icon={faHandshake} />
-      Let's Work Together
+      {`Let's Work Together`}
     </h3>
     <p className="mb-4">
-      I'm actively seeking research collaborations, freelance development
+      {`I'm actively seeking research collaborations, freelance development
       projects, and full-time opportunities. Whether you need a technical
       partner for your research or a developer for your software project, let's
-      discuss how we can work together.
+      discuss how we can work together.`}
     </p>
     <div className="flex flex-wrap gap-4">
       <a

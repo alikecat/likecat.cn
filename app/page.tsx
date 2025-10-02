@@ -42,10 +42,10 @@ const HeroSection: React.FC = () => {
           PhD Candidate in Mechanical Engineering
         </p>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Xi'an Jiaotong University
+          {`Xi'an Jiaotong University`}
           <br />
-          Passionate about creating impactful solutions at the intersection of
-          technology and human needs.
+          {`Passionate about creating impactful solutions at the intersection of
+          technology and human needs.`}
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <ActionButton href="/about" icon={faAddressCard}>
@@ -201,8 +201,8 @@ const CreativeSection: React.FC = () => {
             Creative Passions
           </h2>
           <p className="text-lg text-slate-300 text-center mb-12 max-w-3xl mx-auto">
-            Beyond research, I'm passionate about creative pursuits that inspire
-            innovation and bring joy to everyday life.
+            {`Beyond research, I'm passionate about creative pursuits that inspire
+            innovation and bring joy to everyday life.`}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {interests.map((interest, index) => (
@@ -230,11 +230,11 @@ const CollaborationSection: React.FC = () => {
             <FontAwesomeIcon icon={faHandshake} className="text-blue-400" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Let's Collaborate
+            {`Let's Collaborate`}
           </h2>
           <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-            Interested in working together? I'm always open to discussing new
-            projects, research opportunities, or creative partnerships.
+            {`Interested in working together? I'm always open to discussing new
+            projects, research opportunities, or creative partnerships.`}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <ActionButton

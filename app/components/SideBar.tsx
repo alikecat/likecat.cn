@@ -37,7 +37,7 @@ export const SideBar = () => {
         <p className="font-mono text-center text-slate-300 leading-relaxed">
           PhD Candidate in Mechanical Engineering
           <br />
-          Xi'an Jiaotong University
+          {`Xi'an Jiaotong University`}
         </p>
         <div className="table leading-loose border-t border-white/20 py-4 font-bold">
           {nav.map((link) =>
